@@ -1,0 +1,532 @@
+/*
+ * HEADER STYLES
+ */
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+.nav-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 100;
+    transition: all 200ms ease-out;
+}
+.contact-container{
+    text-align: center;
+    transition: all 200ms ease-out;
+    height: 30px;
+    background-color: #111111;
+}
+.contact-container a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #CCB36D;
+    font-size: 10px;
+}
+.contact-container span{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 0 7px;
+    color: #333333;
+    font-size: 20px;
+    line-height: .8;
+	 position: relative;
+    top: 4px;
+}
+.mobile-contact-container{
+  margin-top: 20px;
+}
+.mobile-contact-container a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.main-navigation .menu-main-menu-container ul li a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+.nav-container.dark-nav {
+  position: relative;
+  top: 20px;
+  margin-bottom: 115px;
+}
+
+.nav-container.dark-nav a {
+  color: #64635D;
+}
+
+.nav-container.dark-nav.sticky a {
+  color: #FFF;
+}
+
+.nav-container.sticky {
+  position: fixed;
+}
+.sticky .main-navigation{
+    background-color: #000000;
+    opacity: .5;
+}
+.nav-container.sticky .main-navigation .menu-item-33 {
+  /*background-image: url('../images/Aurelia.png');*/
+  background-image: url('../svg/logo.svg');
+}
+
+.banner {
+  height: 100vh;
+  position: relative;
+}
+
+.banner-img {
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.banner .row {
+  height: 100vh;
+}
+
+.banner .container-fluid {
+  position: relative;
+  z-index: 10;
+}
+
+.scroll-down {
+  display: inline-block;
+  color: #FFF;
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  width: 1px;
+  height: 50px;
+  background-color: #CCB36D;
+  right: 0;
+  margin: 0 auto;
+}
+
+.mobile-logo {
+  position: absolute;
+  top: 20px;
+  z-index: 100;
+  display: none;
+}
+
+ /* Mobile Menu CSS Settings */
+ .body-overlay {
+   display: none;
+   z-index: 1;
+ }
+
+ .cbp-spmenu {
+   background: #8B8882;
+   position: fixed;
+ }
+
+ .cbp-spmenu h3 {
+   color: #afdefa;
+   font-size: 1.9em;
+   padding: 20px;
+   margin: 0;
+   font-weight: 300;
+   background: #0d77b6;
+ }
+
+ .cbp-spmenu ul {
+   list-style-type: none;
+   margin: 0;
+ }
+
+ .cbp-spmenu ul li {
+   margin-left: 0;
+   text-align: right;
+   position: relative;
+ }
+
+ .cbp-spmenu a {
+   display: inline-block;
+   color: #FFF;
+   font-size: 16px;
+   font-weight: 400;
+   text-decoration: none;
+   text-transform: uppercase;
+ }
+
+ .cbp-spmenu #menu-item-33 {
+   display: none;
+ }
+
+ .cbp-spmenu ul li input[type="checkbox"] {
+   height: 0;
+   overflow: hidden;
+   display: none;
+ }
+
+ .cbp-spmenu ul li label {
+   left: 8px;
+   position: absolute;
+   top: 4px;
+   display: block;
+   content: "";
+   text-align: center;
+   color: white;
+   font-weight: bold;
+   cursor: pointer;
+ }
+
+ .cbp-spmenu ul li label:before,
+ /*This flip-reverses the label */
+
+ .cbp-spmenu ul li input[type="checkbox"]:checked.current~label:before {
+   content: "+";
+ }
+
+ .cbp-spmenu ul li input[type="checkbox"]:checked~label:before, .cbp-spmenu ul li input[type="checkbox"].current~label:before {
+   content: "-";
+ }
+
+ /* Orientation-dependent styles for the content of the menu */
+
+ .cbp-spmenu-vertical {
+   width: 240px;
+   height: 100%;
+   top: 0;
+   z-index: 1000;
+   padding-top: 60px;
+ }
+
+ .cbp-spmenu-vertical a {
+   padding: 4px 15px 0px 10px;
+ }
+
+ /* Vertical menu that slides from the left or right */
+
+ .cbp-spmenu-left {
+   left: -240px;
+ }
+
+ .cbp-spmenu-right {
+   right: -240px;
+ }
+
+ .cbp-spmenu-left.cbp-spmenu-open {
+   left: 0px;
+ }
+
+ .cbp-spmenu-right.cbp-spmenu-open {
+   right: 0px;
+ }
+
+ /* Horizontal menu that slides from the top or bottom */
+
+ .cbp-spmenu-top {
+   top: -150px;
+ }
+
+ .cbp-spmenu-bottom {
+   bottom: -150px;
+ }
+
+ .cbp-spmenu-top.cbp-spmenu-open {
+   top: 0px;
+ }
+
+ .cbp-spmenu-bottom.cbp-spmenu-open {
+   bottom: 0px;
+ }
+
+ /* Push classes applied to the body */
+
+ .cbp-spmenu-push {
+   overflow-x: hidden;
+   position: relative;
+   left: 0;
+ }
+
+ .cbp-spmenu-push>div.body-overlay {
+   display: none;
+   z-index: 999;
+ }
+
+ .cbp-spmenu-push-toright {
+   left: 240px;
+ }
+
+ .cbp-spmenu-push-toleft {
+   left: -240px;
+ }
+
+ /* Transitions */
+
+ .cbp-spmenu, .cbp-spmenu-push {
+   -webkit-transition: all 0.3s ease;
+   -moz-transition: all 0.3s ease;
+   transition: all 0.3s ease;
+ }
+
+ #showRight {
+   position: absolute;
+   top: 20px;
+   right: 10px;
+   z-index: 99999;
+   display: none;
+ }
+
+ .nav-icon3 {
+   width: 33px;
+   height: 45px;
+   margin-top: 8px;
+   position: relative;
+   -webkit-transform: rotate(0deg);
+   -moz-transform: rotate(0deg);
+   -o-transform: rotate(0deg);
+   transform: rotate(0deg);
+   -webkit-transition: 0.5s ease-in-out;
+   -moz-transition: 0.5s ease-in-out;
+   -o-transition: 0.5s ease-in-out;
+   transition: 0.5s ease-in-out;
+   cursor: pointer;
+ }
+
+ .nav-icon3 span {
+   display: block;
+   position: absolute;
+   height: 5px;
+   width: 100%;
+   background: #FFF;
+   border-radius: 9px;
+   opacity: 1;
+   left: 0;
+   -webkit-transform: rotate(0deg);
+   -moz-transform: rotate(0deg);
+   -o-transform: rotate(0deg);
+   transform: rotate(0deg);
+   -webkit-transition: 0.25s ease-in-out;
+   -moz-transition: 0.25s ease-in-out;
+   -o-transition: 0.25s ease-in-out;
+   transition: 0.25s ease-in-out;
+ }
+
+ /* Icon 3 */
+
+ .nav-icon3 span:nth-child(1) {
+   top: 0px;
+ }
+
+ .nav-icon3 span:nth-child(2), .nav-icon3 span:nth-child(3) {
+   top: 10px;
+ }
+
+ .nav-icon3 span:nth-child(4) {
+   top: 20px;
+ }
+
+ .nav-icon3.open span:nth-child(1) {
+   top: 18px;
+   width: 0%;
+   left: 50%;
+ }
+
+ .nav-icon3.open span:nth-child(2) {
+   -webkit-transform: rotate(45deg);
+   -moz-transform: rotate(45deg);
+   -o-transform: rotate(45deg);
+   transform: rotate(45deg);
+ }
+
+ .nav-icon3.open span:nth-child(3) {
+   -webkit-transform: rotate(-45deg);
+   -moz-transform: rotate(-45deg);
+   -o-transform: rotate(-45deg);
+   transform: rotate(-45deg);
+ }
+
+ .nav-icon3.open span:nth-child(4) {
+   top: 18px;
+   width: 0%;
+   left: 50%;
+ }
+
+ #cbp-spmenu-s2 .sub-menu {
+   margin: 10px 15px !important;
+ }
+
+ #cbp-spmenu-s2 .menu input[type="checkbox"]~ul.sub-menu, #cbp-spmenu-s2 .menu input[type="checkbox"].current:checked~ul.sub-menu {
+   display: none;
+   overflow: hidden;
+   transition: all .2s ease-in;
+ }
+
+ #cbp-spmenu-s2 .menu input[type="checkbox"]:checked~ul.sub-menu, #cbp-spmenu-s2 .menu input[type="checkbox"].current~ul.sub-menu {
+   display: block;
+ }
+
+ #cbp-spmenu-s2 .sub-menu a {
+   font-weight: 300;
+   font-size: 14px;
+   transition: all .5s ease-in;
+ }
+
+ /* Mobile Menu CSS Settings - END here */
+
+/*================== END FOR HEADER STYLES ==================*/
+
+
+/*
+ * FOOTER STYLES
+ */
+footer p,
+footer span,
+footer li,
+footer a,
+footer a:visited,
+footer strong,
+footer h4,
+footer div {
+  color: #FFF;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.top-footer {
+    background-color: #8B8882;
+    padding: 50px 0 0px 0;
+}
+
+.top-footer h4 {
+  font-family: 'Requiem';
+  color: #CCB36D; 
+  margin-bottom: 20px;
+}
+
+.top-footer ul {
+  list-style: none;
+  margin: 0;
+}
+
+.top-footer li {
+  margin: 0;
+}
+
+.top-footer li a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-size: 10px;
+  line-height: 3;
+}
+
+.top-footer label {
+  font-family: 'Requiem';
+  color: #FFF;
+  font-size: 14px;
+}
+
+.top-footer .row > div {
+  position: relative;
+}
+
+.top-footer .row > div:not(:last-child)::after {
+  content: "";
+  height: 165px;
+  width: 1px;
+  position: absolute;
+  right: 14px;
+  top: -15px;
+  bottom: 0;
+  background-color: #99958F;
+}
+
+#subscriber {
+  font-family: "Requiem";
+  border: #CCB36D solid 1px;
+  background: none;
+  border-radius: 0;
+  width: 148px;
+  font-size: 11px;
+  padding: 5px 5px;
+  font-weight: 300;
+  color: #FFF;
+}
+
+#subscriber::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #FFF;
+}
+#subscriber::-moz-placeholder { /* Firefox 19+ */
+  color: #FFF;
+}
+#subscriber:-ms-input-placeholder { /* IE 10+ */
+  color: #FFF;
+}
+
+.subscribe-btn {
+  background-color: #CCB36D !important;
+  border-radius: 0 !important;
+  color: #FFF !important;
+  border: 1px #CCB36D solid !important;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  font-size: 10px !important;
+  letter-spacing: 2px;
+  height: 28px;
+  position: relative;
+  left: -4px;
+  cursor: pointer;
+  transition: all 200ms ease;
+  font-family: "Open sans", sans-serif;
+}
+
+.subscribe-btn:hover {
+  background-color: transparent !important;
+}
+
+.bottom-footer {
+  background-image: url('../images/footer-bg.jpg');
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.bottom-footer .row {
+  height: 50px;
+}
+
+.bottom-footer div {
+  font-family: 'Requiem';
+  font-size: 11px;
+}
+.grayscaled-logo img{
+  width: 200px;
+}
+
+/*================== END FOR FOOTER STYLES ==================*/

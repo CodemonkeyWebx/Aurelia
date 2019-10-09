@@ -1,0 +1,168 @@
+@media only screen and (max-width: 1199px) {
+
+}
+
+@media only screen and (max-width: 1024px) {
+  .mobile-logo {
+    display: block;
+  }
+
+  #showRight {
+    display: block;
+  }
+  .main-navigation{
+    display: none;
+  }
+  .contact-container{
+    display: none;
+  }
+  .nav-container{
+	background-color: transparent;
+  }
+
+/*  .custom-page,
+  .custom-page > div.row {
+    height: auto;
+  }*/
+
+}
+/*@media only screen and (max-width: 540px) {
+  .custom-page,
+  .custom-page > div.row {
+    height: 100vh !important;
+  }
+}*/
+
+@media only screen and (max-width: 991px) {
+.page-id-10 .section-03 .img-fluid{
+      margin-top: 70px;
+}
+
+  .page-id-12 .section-03 ul {
+    -webkit-columns: 2;
+    -moz-columns: 2;
+         columns: 2;
+  }
+
+  .consultants .col-lg-4:nth-child(3n+2)::after,
+  .consultants .col-lg-4:nth-child(1)::after,
+  .consultants .col-lg-4:nth-child(4)::after {
+    display: none;
+  }
+  .page-id-10 .aurelia-residences-section-01 h3 {
+      margin-top: 0;
+  }
+  .page-id-10 .section-welcome-01 {
+      margin-bottom: -35px;
+  }
+    .page-id-6 .section-02 {
+      padding-top: 70px;
+      margin-top: 70px;
+  }
+    .img-aurelia{
+      margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .page-id-315 .section-01 dl,
+  .page-id-315 .section-01 dt {
+    display: block;
+    width: 100% !important;
+  }
+  .view-aurelia::after {
+      content: unset;
+  }
+  .page-id-10 .section-01::after{
+    content: unset;
+  }
+  .page-id-10 .section-story-02::after{
+    content: unset;
+  }
+  .page-id-10 .section-03::after{
+    content: unset;
+  }
+  .page-id-10 .section-welcome-01 {
+      margin-bottom: 0;
+  }
+  .page-id-6 .section-01{
+      margin-bottom: 0;
+  }
+  .page-id-6  .section-05 .img-fluid{
+    margin-top: 30px;
+  }
+  .page-id-10 .heart-aurelia .img-fluid{
+    margin-top: 30px;
+  }
+  .page-id-12 .section-04 .img-fluid{
+    margin-top: 30px;
+  }
+  .page-id-10 .section-03 .zoom-button {
+      display: none;
+  }
+  .page-id-10 .aurelia-residences-section-01 .aurelia-border-right{
+        border-right: unset;
+  }
+
+}
+
+@media only screen and (max-width: 540px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .image-separator {
+    max-height: 250px;
+  }
+
+  .page-id-12 .section-03 ul {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+         columns: 1;
+  }
+
+  .custom-page img {
+    max-width: 130px;
+  }
+  
+  .custom-page h1 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .custom-page img,
+  .custom-page h3, .thank-page h3 {
+    margin-bottom: 20px;
+  }
+
+  .custom-page .white-stick {
+    height: 16px;
+    margin-top: 10px;
+    margin-bottom: 13px;
+  }
+
+  #wpcf7-f275-o1 .dpa-link {
+    font-size: 12px;
+  }
+  .page-id-10 .section-welcome-01 {
+      margin-bottom: 0;
+  }
+  .page-id-10 .aurelia-residences-section-01 h3 {
+      margin-top: 0;
+  }
+  .page-id-10 .aurelia-residences-section-01 h3 {
+    font-size: 24px;
+  }
+  .page-id-10 .image-quote p {
+    font-size: 24px;
+  }
+  .content {
+    display: none;
+}
+	.page-id-6 .section-03 p {
+		font-size: 24px;
+	}
+  .aurelia-residences-section-01 {
+    margin-top: 0px;
+}
+}
