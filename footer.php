@@ -41,7 +41,7 @@
 					<div class="text-lg-center">
 						<ul>
 							<li><a href="emailto:sales@aureliaresidences.com">sales@aureliaresidences.com</a></li>
-							<li><a href="tel:2873542">+632 – AURELIA (287 – 3542)</a></li>
+							<li><a href="tel:2873542">+632 8 AURELIA (8 287 – 3542)</a></li>
 							<li><a href="tel:09178550851">Mobile: (+63) 0917-8550851</a></li>
 						</ul>
 						<p><br/>

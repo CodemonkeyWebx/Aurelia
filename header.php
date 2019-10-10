@@ -68,7 +68,7 @@
 						<img src="wp-content/themes/aurelia/src/svg/logo.svg"  title="" />
 					</a>
 					<div class="mobile-contact-container">
-						<a href="tel:2873542">+632 AURELIA (287 – 3542)</a>
+						<a href="tel:2873542">+632 8 AURELIA (8 287 – 3542)</a>
 						<br/>
 						<a href="mailto:sales@aureliaresidences.com">sales@aureliaresidences.com</a>
 					</div>
@@ -79,7 +79,7 @@
 		
 		<div class="nav-container <?php echo $darkNav; ?>">
 			<div class="contact-container">
-				<a href="tel:2873542">+632 AURELIA (287 – 3542)</a>
+				<a href="tel:2873542">+632 8 AURELIA (8 287 – 3542)</a>
 				<span>|</span> 
 				<a href="mailto:sales@aureliaresidences.com">sales@aureliaresidences.com</a>
 			</div>
